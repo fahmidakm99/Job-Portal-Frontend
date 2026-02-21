@@ -1,0 +1,368 @@
+/* Page Container */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6; /* light gray background */
+}
+
+/* Main Wrapper */
+.min-h-screen {
+  min-height: 100vh;
+  padding: 2rem; /* adds page padding */
+}
+
+/* Header Section */
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.job-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.job-header p {
+  color: #4b5563;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.job-header .add-job-btn {
+  background-color: #16a34a; /* green */
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+.job-header .add-job-btn:hover {
+  background-color: #15803d;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  gap: 2rem; /* space between cards */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Job Card */
+.bg-white {
+  background-color: #ffffff;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hover\:shadow-2xl:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+/* Badge */
+.inline-block {
+  display: inline-block;
+}
+
+.bg-blue-100 {
+  background-color: #dbeafe;
+}
+
+.text-blue-700 {
+  color: #1e40af;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Job Title */
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-800 {
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+/* Job Info */
+.space-y-3 > * + * {
+  margin-top: 0.75rem;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+/* Description */
+.mt-4 {
+  margin-top: 1rem;
+}
+
+/* line-clamp 3 */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Card Bottom Button */
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bg-blue-600 {
+  background-color: #2563eb;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: #1d4ed8;
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Card Content Padding and spacing */
+.job-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+/* Add spacing inside card sections */
+.job-card-content > div {
+  margin-bottom: 1rem;
+}
+
+/* Header container */
+.header-container {
+  display: flex;
+  justify-content: space-between;  /* pushes start & end */
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Text section */
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Subtitle */
+.subtitle {
+  margin-top: 5px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Add Job Button */
+.addJob{
+display: inline-block;          
+  background-color: #dbeafe;      
+  color: #1d4ed8;                 
+  font-size: 0.75rem;            
+  font-weight: 500;              
+  padding: 0.25rem 0.75rem;      
+  border-radius: 9999px;         
+  margin-bottom: 1rem;     
+}
+
+.addJob:hover {
+  background-color: #192b5d;
+  color: #e5e7eb;
+}
+/* Search + Filter Container */
+.bg-white.p-6.rounded-xl.shadow-md.mb-8 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Search Input */
+input[type="text"] {
+  width: 100%;
+  /* padding: 0.5rem 0.75rem 0.5rem 2.5rem; left padding for search icon */
+  border: 1px solid #d1d5db; /* gray border */
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: #1f2937;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #2563eb; /* blue focus */
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Search Icon inside Input */
+.relative svg {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+/* Select Dropdowns (Location & Type) */
+select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: #1f2937;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #2563eb;
+}
+
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* No Jobs Found Container */
+.no-jobs {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.no-jobs p {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.no-jobs button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #2563eb;
+  background-color: #ffffff;
+  color: #2563eb;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.no-jobs button:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .bg-white.p-6.rounded-xl.shadow-md.mb-8 {
+    grid-template-columns: 1fr;
+  }
+}

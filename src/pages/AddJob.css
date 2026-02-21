@@ -1,0 +1,106 @@
+/* Page Background */
+.add-job-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f6fd, #e8efff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Card */
+.add-job-card {
+  background: #ffffff;
+  width: 650px;        /* Fixed width */
+  max-width: 60%;      /* Prevent overflow on small screens */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+
+.add-job-card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Form Layout */
+.add-job-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Inputs + Select + Textarea */
+.add-job-card input,
+.add-job-card select,
+.add-job-card textarea {
+  width: 90%;            /* Same width for all elements */
+  max-width: 500px;      /* Prevent stretching too much */
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  outline: none;
+  background: #fafafa;
+}
+
+/* Textarea height */
+.add-job-card textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+/* Focus Effect */
+.add-job-card input:focus,
+.add-job-card select:focus,
+.add-job-card textarea:focus {
+  border-color: #4f6df5;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(79, 109, 245, 0.1);
+}
+
+/* Label Style (for Deadline text) */
+.add-job-card p {
+  margin: 5px 0 -10px 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Button */
+.add-job-card button {
+  margin-top: 10px;
+  padding: 14px;
+  background: #4f6df5;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-job-card button:hover {
+  background: #3c56d8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 109, 245, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .add-job-card {
+    padding: 25px;
+  }
+}
+
+
+
+
+
+

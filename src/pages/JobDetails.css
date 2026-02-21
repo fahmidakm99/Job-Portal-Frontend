@@ -1,0 +1,231 @@
+.job-layout {
+    display: grid;
+    grid-template-columns: 1fr 280px; /* left content + fixed sidebar */
+    gap: 30px;
+    padding: 40px;
+    background: #f5f7fa;
+
+    min-width: 800px;   /* minimum width of layout */
+    max-width: 1200px;  /* optional, prevents too wide layout on large screens */
+    min-height: 100vh;  /* ensures it takes full viewport height */
+    margin: 0 auto;     /* center layout horizontally */
+}
+
+
+.job-left {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.job-right {
+     flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  height: fit-content;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.job-title {
+  font-size: 28px;
+  margin: 10px 0 20px 0;
+  color: #212529;
+}
+
+.job-meta p {
+    margin: 6px 0;
+    color: #555;
+}
+
+
+.job-section {
+    margin-top: 24px;
+      margin-bottom: 10px;
+  color: #495057;
+  
+}
+.job-bottompart {
+    grid-column: 1 / -1;  /* 👈 span all columns */
+    margin-top: 24px;
+    margin-bottom: 10px;
+    padding: 20px;       /* add padding for content */
+    background-color: #fff;
+    border-radius: 12px;
+    color: white;         /* text contrast */
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1f2937;
+    /* dark gray */
+}
+
+.section-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4b5563;
+    /* medium gray */
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+      margin-top: 5px;
+}
+
+.skill-badge {
+     background-color: #e7f1ff;
+  color: #007bff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.skill-badge.light {
+ background-color: #f0f0f0;
+  color: #555;
+}
+
+.applicant-card {
+    border: 1px solid #eee;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+     border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.applicant-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.best-match {
+    border: 2px solid #16a34a;
+}
+
+.match-section {
+    margin: 8px 0;
+}
+
+
+
+.match-btn {
+    background-color: #007bff;
+
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+  margin-bottom: 15px;
+     font-weight: 500;
+}
+
+.match-btn:hover {
+    background: #1e40af;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.center-text {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.applicant-header {
+    display: flex;
+    justify-content: space-between;
+    /* Name on left, badge on right */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.applicant-info h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #212529;
+}
+
+.applicant-info span {
+  font-size: 13px;
+  color: #555;
+}
+.match-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    /* pill shape */
+    border-radius: 50px;
+    /* full rounded */
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    min-width: 60px;
+    text-align: center;
+}
+.match-badge.high {
+    background: #16a34a;
+    /* green */
+}
+
+.match-badge.low {
+    background: #fa7d7d;
+    /* red */
+}
+
+.match-badge.mid {
+  background-color: #ffc107;
+}
+
+
+
+
+/* --- Applicants Section --- */
+.filter-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.filter-select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+
+/* --- Applicant Card --- */
+
+
+
+
+.status-select {
+  margin-left: 5px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  cursor: pointer;
+}
+
