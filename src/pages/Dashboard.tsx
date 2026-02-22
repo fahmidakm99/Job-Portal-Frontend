@@ -29,15 +29,15 @@ export function Dashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-          const totaljobRes = await fetch(`http://localhost:5000/api/jobs`);
+          const totaljobRes = await fetch(`https://job-portal-backend-qxvd.onrender.com/api/jobs`);
         const totaljobData = await totaljobRes.json();
         setAllJobs(totaljobData);
-        const jobRes = await fetch(`http://localhost:5000/api/jobs/${jobId}`);
+        const jobRes = await fetch(`https://job-portal-backend-qxvd.onrender.com/api/jobs/${jobId}`);
         const jobData = await jobRes.json();
         setJob(jobData);
 
         const applicantRes = await fetch(
-          `http://localhost:5000/api/applicants`
+          `https://job-portal-backend-qxvd.onrender.com/api/applicants`
         );
         const applicantData = await applicantRes.json();
         setApplicants(applicantData);

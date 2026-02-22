@@ -18,12 +18,12 @@ export default function JobDetails() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const jobRes = await fetch(`http://localhost:5000/api/jobs/${jobId}`);
+        const jobRes = await fetch(`https://job-portal-backend-qxvd.onrender.com/api/jobs/${jobId}`);
         const jobData = await jobRes.json();
         setJob(jobData);
 
         const applicantRes = await fetch(
-        `http://localhost:5000/api/applicants/job/${jobId}`
+        `https://job-portal-backend-qxvd.onrender.com/api/applicants/job/${jobId}`
         );
         const applicantData = await applicantRes.json();
         setApplicants(applicantData);
@@ -83,7 +83,7 @@ export default function JobDetails() {
   ) => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/applicants/${_id}/status`,
+        `https://job-portal-backend-qxvd.onrender.com/api/applicants/${_id}/status`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

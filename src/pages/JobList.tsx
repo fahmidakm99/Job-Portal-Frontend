@@ -24,7 +24,7 @@ export default function JobList(): JSX.Element {
   const [typeFilter, setTypeFilter] = useState("all");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/jobs")
+    fetch("https://job-portal-backend-qxvd.onrender.com/api/jobs")
       .then((res) => res.json())
       .then((data) => {
         setJobs(data);
