@@ -23,7 +23,7 @@ export default function JobDetails() {
         setJob(jobData);
 
         const applicantRes = await fetch(
-          `http://localhost:5000/api/jobs/${jobId}/applicants`
+        `http://localhost:5000/api/applicants/job/${jobId}`
         );
         const applicantData = await applicantRes.json();
         setApplicants(applicantData);
